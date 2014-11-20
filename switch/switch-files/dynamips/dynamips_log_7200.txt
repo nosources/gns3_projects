@@ -1,0 +1,21 @@
+Nov 17 10:15:48.898 HYPERVISOR: Release 0.2.12-amd64/Darwin (tag 2014032722)
+Nov 17 10:15:48.898 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 7200.
+Nov 17 10:15:48.907 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 17 10:15:48.907 HYPERVISOR: exec_cmd: hypervisor uuid 
+Nov 17 10:15:48.907 HYPERVISOR: exec_cmd: hypervisor working_dir /Volumes/backup/Projects/switch/switch-files/dynamips 
+Nov 17 10:15:48.907 GENERAL: working_dir=/Volumes/backup/Projects/switch/switch-files/dynamips
+Nov 17 10:15:48.908 HYPERVISOR: exec_cmd: ethsw create SW1 
+Nov 17 10:16:45.772 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto0 127.0.0.1 10001 20000 
+Nov 17 10:16:45.863 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto0 127.0.0.1 20503 
+Nov 17 10:16:45.864 HYPERVISOR: exec_cmd: ethsw add_nio SW1 nio_udp_auto0 
+Nov 17 10:16:45.866 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 nio_udp_auto0 1 
+Nov 17 10:17:00.187 HYPERVISOR: exec_cmd: nio create_udp_auto nio_udp_auto1 127.0.0.1 10001 20000 
+Nov 17 10:17:00.211 HYPERVISOR: exec_cmd: nio connect_udp_auto nio_udp_auto1 127.0.0.1 20504 
+Nov 17 10:17:00.211 HYPERVISOR: exec_cmd: ethsw add_nio SW1 nio_udp_auto1 
+Nov 17 10:17:00.222 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 nio_udp_auto1 1 
+Nov 17 11:37:44.518 HYPERVISOR: exec_cmd: ethsw remove_nio SW1 nio_udp_auto1 
+Nov 17 11:37:44.569 HYPERVISOR: exec_cmd: nio delete nio_udp_auto1 
+Nov 17 11:37:48.411 HYPERVISOR: exec_cmd: ethsw remove_nio SW1 nio_udp_auto0 
+Nov 17 11:37:48.414 HYPERVISOR: exec_cmd: nio delete nio_udp_auto0 
+Nov 17 11:37:48.418 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Nov 17 11:37:48.419 HYPERVISOR: exec_cmd: hypervisor stop 
